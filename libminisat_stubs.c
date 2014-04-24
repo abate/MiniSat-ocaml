@@ -1,7 +1,7 @@
 
 #define __STDC_LIMIT_MACROS
 #define __STDC_FORMAT_MACROS
-#include <minisat2/Solver.h>
+#include <minisat/core/Solver.h>
 
 using namespace Minisat;
 
