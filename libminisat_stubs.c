@@ -24,7 +24,7 @@ extern "C"
   CAMLprim value minisat_neg_lit(value v);
   CAMLprim value minisat_lit_to_var(value v);
   CAMLprim value minisat_lit_sign(value v);
-  CAMLprim value minisat_mklit(value v);
+  CAMLprim value minisat_mklit(value v, value sign);
   CAMLprim value minisat_add_clause(value solver, value clause);
   CAMLprim value minisat_simplify(value solver);
   CAMLprim value minisat_conflict(value solver);
