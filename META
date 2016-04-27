@@ -1,5 +1,5 @@
 name="Minisat"
-version="0.3"
+version="0.4"
 description="Ocaml bindings to Minisat 2"
 requires=""
 archive(byte) = "minisat.cma"

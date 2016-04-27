@@ -1,6 +1,6 @@
 
-MiniSat-ocaml
-=============
+OCaml Binding for minisat2
+==========================
 
 MiniSat-ocaml is a set of OCaml bindings for the SAT solver MiniSat.  Instead
 of reimplementing MiniSat itself in OCaml, this library makes the MiniSat
@@ -16,23 +16,17 @@ define a clause ('c' followed by a sequence of names, with a leading '-' if
 they are negated in the clause) and comments (starting with '#'). A couple of
 example formulas are available in the 'examples/' directory.
 
-For questions, comments, suggestion, or improvements please contact Flavio
-Lerda <flerda@gmail.com> or Pietro Abate <pietro.abate@pps.jussieu.fr>
+For questions, comments, suggestion, or improvements please contact 
+Pietro Abate <pietro.abate@inria.fr>
 
 Copyright:
+     Pietro Abate 2009 - 2016 (c)
      Flavio Lerda 2007 - 2009 (c)
-     Pietro Abate 2009 - 2010 (c)
 
 Install and use
 ===============
 
-To compile MiniSat-ocaml you need the minisat solver (compiled as a dynamic
-library) installed on the system. On debian, the package minisat2 contains both
-the dynamic library and headers. Recently the minisat2 package in debian unstable
-has few problems. See #606846 and #606643 on the debian bts for details. Until 
-these problems are fixed these bindings will not compile on debian.
-
-$ aptitude install minisat2
+$ aptitude install minisat
 $ make
 
 To test it :
