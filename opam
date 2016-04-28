@@ -6,7 +6,10 @@ author: "Pietro Abate and Flavio Lerda"
 license: "GPL3"
 dev-repo: "https://github.com/abate/minisat-ocaml.git"
 homepage: "https://github.com/abate/minisat-ocaml"
-build: ["%{make}%"]
+build: [
+  ["%{make}%"]
+  ["%{make}%" "opt"]
+]
 install: ["%{make}%" "install"]
 
 depexts: [
