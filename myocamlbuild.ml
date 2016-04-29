@@ -32,11 +32,18 @@ let _ = dispatch begin function
             A"-cclib"; A("-l"^lib)]);
 
          flag [ "byte"; "library"; "link" ]
-         (S[A"-dllib"; A("-l"^lib); 
-            A"-cclib"; A("-l"^lib^"stubs")]);
+         (S[A"-cclib"; A"-lstdc++";
+            A"-cclib"; A"-lz";
+            A"-cclib"; A("-l"^lib);
+            A"-dllib"; A("-l"^lib^"_stubs"); 
+            A"-cclib"; A("-l"^lib^"_stubs");
+            A"-custom";
+         ]);
 
          flag [ "native"; "library"; "link" ]
-         (S[A"-cclib"; A("-l"^lib); 
+         (S[A"-cclib"; A"-lstdc++";
+            A"-cclib"; A"-lz";
+            A"-cclib"; A("-l"^lib); 
             A"-cclib"; A("-l"^lib^"_stubs")]);
 
          (* Make sure the C pieces is built... *)

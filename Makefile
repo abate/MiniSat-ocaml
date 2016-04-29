@@ -1,6 +1,6 @@
 
 NAME = minisat
-VERSION = 0.3
+VERSION = 0.4
 
 LIBS = _build/minisat.cma
 LIBS_OPT = _build/minisat.cmxa
